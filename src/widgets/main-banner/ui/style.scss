@@ -1,0 +1,44 @@
+.MainBanner {
+  height: 650px;
+  // padding-top: var(--header_height)/2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./images/main_banner_650h.jpg');
+  color: #ffffff;
+
+  @media screen and (max-width: 1023px) {
+    // background-image: url('./images/main_banner.jpg');
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 450px;
+    // background-image: url('/product-requirement-document/img/prd-banner-1-910.jpg');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('./images/main_banner.jpg');
+  }
+}
+
+.MainBanner__content {
+  height: calc(650px - var(--header_height)/2);
+  height: 100%;
+  padding-top: calc(var(--header_height)/2 + 0px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainBanner__title {
+  // font-family: "Work Sans";
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.MainBanner__description {
+  font-size: 32px;
+  line-height: 38px;
+}
+
