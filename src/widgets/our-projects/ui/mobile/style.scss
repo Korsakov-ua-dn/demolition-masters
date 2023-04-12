@@ -1,0 +1,20 @@
+.Mobile {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Mobile {
+    display: none;
+  }
+}

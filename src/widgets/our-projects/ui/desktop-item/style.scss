@@ -1,0 +1,30 @@
+.DesktopItem {
+  width: 100%;
+  display: flex;
+}
+
+.DesktopItem:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.DesktopItem__image {
+  position: relative;
+  width: 50%;
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.DesktopItem__text {
+  width: 50%;
+  aspect-ratio: 5 / 3;
+  background-color: burlywood;
+}
