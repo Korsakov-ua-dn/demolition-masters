@@ -1,7 +1,10 @@
-import { Layout } from 'shared/ui/layout';
-import './style.scss';
+import { Element } from 'react-scroll';
 import { useMediaQuery } from '@mui/material';
+
+import { Layout } from 'shared/ui/layout';
 import { Button } from 'shared/ui/button';
+
+import './style.scss';
 
 const MainBanner: React.FC = () => {
   const matches = useMediaQuery('(max-width:767px)');
@@ -13,6 +16,7 @@ const MainBanner: React.FC = () => {
 
   return (
     <section className="MainBanner">
+      <Element name="about"></Element>
       <div className="MainBanner__overlay" />
       <Layout>
         <div className="MainBanner__content">

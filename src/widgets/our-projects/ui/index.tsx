@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 import { Layout } from 'shared/ui/layout';
 import { SectionTitle } from 'shared/ui/section-title';
@@ -13,6 +14,7 @@ import './style.scss';
 export const OurProjects: React.FC = (props) => {
   return (
     <section className="OurProjects">
+      <Element name="ourProjects"></Element>
       <Layout>
         <SectionTitle>Наши проекты</SectionTitle>
         <Desktop ourProjects={ourProjects} />
