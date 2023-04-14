@@ -1,18 +1,26 @@
 .Logo {
-    height: 50px;
-    width: 100px;
-    cursor: pointer;
+  height: 40px;
+  width: 80px;
 
-    & svg {
-        height: 100%;
-        width: 100%;
-    }
+  cursor: pointer;
+
+  & svg {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .Logo.top {
-    & svg {
-        & path {
-            fill: #ffffff;
-        }
+  & svg {
+    & path {
+      fill: #ffffff;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Logo {
+    height: 50px;
+    width: 100px;
+  }
 }

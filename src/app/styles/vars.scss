@@ -1,5 +1,5 @@
 :root {
-  --header_height: 80px;
+  --header_height: 80px; // при изменении значения необходимо также откорретировать useHeaderHeight в 'shared/hooks';
 
   --border_radius: 4px;
   --background: #ffffff;

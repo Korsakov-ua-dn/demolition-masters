@@ -1,16 +1,18 @@
 .SectionTitle {
+  max-width: 700px;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 48px;
+  line-height: 48px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-top: var(--header_height);
+  margin-bottom: calc(var(--header_height) / 2);
 }
 
 @media screen and (max-width: 767px) {
   .SectionTitle {
-    margin-bottom: 36px;
     font-size: 30px;
     line-height: 30px;
   }

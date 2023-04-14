@@ -1,39 +1,27 @@
-.MuiButtonBase-root.MenuButton:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.MenuButton.top {
-  & svg path {
-    fill: #ffffff;
-  }
-}
-
-.MenuButton.open {
+// скрыл ripple эффект для состояния кнопки focus-visible
+.MenuButton.MuiTouchRipple-root {
   display: none;
 }
 
-.MenuDrawer .MuiDrawer-paper {
-  background-color: #10283b;
-  color: #ffffff;
-}
-
-.ListItemButton:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+// переопределил стандартный MUI hover
+.MenuButton.MuiButtonBase-root:hover {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .MenuButton.top:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.ListItemIcon {
-  min-width: 40px !important;
-}
-
-.RewindIcon {
-  transform: rotate(180deg);
-  & path {
+// состояние кнопки меню в положении экрана scrollToTop
+.MenuButton.top {
+  & svg path {
     fill: #ffffff;
   }
+}
+
+// скрыть кнопку меню при открытом списке меню
+.MenuButton.open {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

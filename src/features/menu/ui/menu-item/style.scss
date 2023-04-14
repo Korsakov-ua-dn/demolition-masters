@@ -1,0 +1,14 @@
+.MenuItemButton:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.MenuItemIcon {
+  min-width: 40px !important;
+}
+
+.RewindIcon {
+  transform: rotate(180deg);
+  & path {
+    fill: #ffffff;
+  }
+}

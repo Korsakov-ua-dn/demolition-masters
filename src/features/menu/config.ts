@@ -1,4 +1,9 @@
-export const menuItems = [
-  { title: 'О компании', id: 'about' },
-  { title: 'Наши проекты', id: 'ourProjects' },
+export const menuItems: IMenuItem[] = [
+  { id: 'MainBanner', title: 'О компании' },
+  { id: 'OurProjects', title: 'Наши проекты' },
 ];
+
+export type IMenuItem = {
+  id: string; // должен в точности соответствовать className соответствующей секции
+  title: string;
+};
