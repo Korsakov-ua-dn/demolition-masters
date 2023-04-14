@@ -1,0 +1,14 @@
+.SelectWrapper.MuiFormControl-root {
+    width: 100%;
+}
+
+// переопределил стили в состоянии фокуса
+.SelectWrapper:has(.Mui-focused) {
+    & fieldset {
+        border-color: var(--color_accent) !important;
+    }
+
+    & label {
+        color: var(--color_accent);
+    }
+}

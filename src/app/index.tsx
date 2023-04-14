@@ -3,6 +3,7 @@ import { Header } from 'widgets/header';
 import { MainBanner } from 'widgets/main-banner';
 import { OurProjects } from 'widgets/our-projects/ui';
 import { Calculator } from 'widgets/calculator';
+import { Footer } from 'widgets/footer';
 
 import { withProviders } from './providers';
 
@@ -15,6 +16,8 @@ export const App = withProviders(() => {
       <MainBanner />
       <OurProjects />
       <Calculator />
+      <Footer />
+
       <PopupsManager />
     </main>
   );
