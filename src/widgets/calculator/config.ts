@@ -1,4 +1,4 @@
-export const services: Services[] = [
+export const services: Service[] = [
   {
     id: 1,
     title: 'Демонтаж монолитного здания',
@@ -16,22 +16,17 @@ export const services: Services[] = [
   },
   {
     id: 4,
-    title: 'Демонтаж зданий свыше 15м',
-    bid: 500,
-  },
-  {
-    id: 5,
     title: 'Демонтаж ангаров и сооружений из металического каркаса',
     bid: 50,
   },
   {
-    id: 6,
+    id: 5,
     title: 'Демонтаж фундамента',
     bid: 400,
   },
 ];
 
-export interface Services {
+export interface Service {
   id: number;
   title: string;
   bid: number;

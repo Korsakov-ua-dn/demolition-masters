@@ -1,18 +1,12 @@
 .Calculator__container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px 0 50px 0;
+  padding: 10px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color_accent);
   color: #ffffff;
-}
-
-.FormWrapper {
-  width: 100%;
-  padding: 20px;
-  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {

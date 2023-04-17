@@ -1,0 +1,15 @@
+.Calculator__field {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--font_color);
+}
+
+@media screen and (max-width: 545px) {
+  .Calculator__field {
+    width: 100%;
+  }
+}
