@@ -1,11 +1,11 @@
-import { Contacts } from './ui/contacts';
+import { Feedback } from './ui/feedback';
 
 export enum POPUPS {
-  contacts = 'contacts',
+  feedback = 'feedback',
 }
 
 export const popups = {
-  [POPUPS.contacts]: Contacts,
+  [POPUPS.feedback]: Feedback,
 };
 
 export type PopupsNameType = keyof typeof popups;

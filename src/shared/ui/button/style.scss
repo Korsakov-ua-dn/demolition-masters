@@ -13,3 +13,15 @@
 .Button:hover {
   border: 1px solid #ffffff;
 }
+
+.Button_white {
+  background-color: #ffffff;
+  border: 2px solid #d0021b;
+  color: #d0021b;
+}
+
+.Button_white:hover {
+  background-color: #d0021b;
+  color: #ffffff;
+}
+

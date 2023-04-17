@@ -12,7 +12,7 @@ export const Form: React.FC<IProps> = memo(
   ({ children, className, onSubmit }) => {
     return (
       <form
-        className={`Form ${className ? className : ''}`}
+        className={`Form ${className ? 'Form_' + className : ''}`}
         onSubmit={onSubmit}
       >
         {children}

@@ -2,10 +2,14 @@ import React from 'react';
 
 import './style.scss';
 
-interface IProps {
-  children: string;
-}
+type Props = JSX.IntrinsicElements['h3'] & {
+  className?: string;
+};
 
-export const Subtitle: React.FC<IProps> = ({ children }) => {
-  return <h3 className="Subtitle">{children}</h3>;
+export const Subtitle: React.FC<Props> = ({ className, ...restProps }) => {
+  const props = {
+    ...restProps,
+    className: `Subtitle ${className ? 'Subtitle_' + className : ''}`,
+  };
+  return <h3 {...props}>{restProps.children}</h3>;
 };

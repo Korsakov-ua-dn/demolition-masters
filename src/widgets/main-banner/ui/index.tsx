@@ -3,11 +3,13 @@ import { useMediaQuery } from '@mui/material';
 import { Section } from 'shared/ui/section';
 import { Layout } from 'shared/ui/layout';
 import { Button } from 'shared/ui/button';
+import { useFeedbackPopup } from 'features/popup';
 
 import './style.scss';
 
 const MainBanner: React.FC = () => {
   const matches = useMediaQuery('(max-width:767px)');
+  const onContactUs = useFeedbackPopup();
 
   const description = matches
     ? 'Демонтаж промышленных сооружений.'
@@ -27,7 +29,7 @@ const MainBanner: React.FC = () => {
               __html: `${description}`,
             }}
           ></p>
-          <Button>Связаться с нами</Button>
+          <Button onClick={onContactUs}>Связаться с нами</Button>
         </div>
       </Layout>
     </Section>
