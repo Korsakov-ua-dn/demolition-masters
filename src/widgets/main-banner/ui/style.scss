@@ -1,24 +1,19 @@
 .MainBanner {
   position: relative;
   height: 650px;
-  // padding-top: var(--header_height)/2;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('./images/main_banner_650h.jpg');
+  background-image: url('./images/main_banner_650h.webp');
   color: #ffffff;
-
-  @media screen and (max-width: 1023px) {
-    // background-image: url('./images/main_banner.jpg');
-  }
 
   @media screen and (max-width: 767px) {
     height: 450px;
-    // background-image: url('/product-requirement-document/img/prd-banner-1-910.jpg');
+    background-image: url('./images/main_banner450h.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('./images/main_banner.jpg');
+    background-image: url('./images/main_banner.webp');
   }
 }
 

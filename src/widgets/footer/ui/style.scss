@@ -1,7 +1,11 @@
+@import '../../../shared/scss/mixines.scss';
+
 .Footer {
   margin-top: var(--header_height);
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: var(--color_accent);
   color: #ffffff;
+
+  @include flexCenter();
 }

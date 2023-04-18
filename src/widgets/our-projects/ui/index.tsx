@@ -15,10 +15,12 @@ export const OurProjects: React.FC = (props) => {
   return (
     <section className="OurProjects">
       <Element name="ourProjects"></Element>
+
       <Layout>
         <SectionTitle>Наши проекты</SectionTitle>
         <Desktop ourProjects={ourProjects} />
       </Layout>
+
       <Mobile ourProjects={ourProjects} />
     </section>
   );

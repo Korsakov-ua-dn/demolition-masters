@@ -12,6 +12,12 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.MenuButton {
+  & svg path {
+    fill: var(--color_accent);
+  }
+}
+
 // состояние кнопки меню в положении экрана scrollToTop
 .MenuButton.top {
   & svg path {

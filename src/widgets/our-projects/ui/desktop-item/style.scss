@@ -26,5 +26,65 @@
 .DesktopItem__text {
   width: 50%;
   aspect-ratio: 5 / 3;
-  background-color: burlywood;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+.DesktopItem__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.DesktopItem__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 13;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  white-space: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1.05px;
+}
+
+.DesktopItem__date {
+  margin-top: auto;
+  text-align: end;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color_dark_grey);
+}
+
+.DesktopItem__text:hover {
+  & .DesktopItem__title,
+  & .DesktopItem__description {
+    color: var(--color_error);
+  }
+
+}
+
+@media screen and (max-width: 1439px) {
+  .DesktopItem__description {
+    -webkit-line-clamp: 9;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .DesktopItem__description {
+    -webkit-line-clamp: 7;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .DesktopItem__title {
+    font-size: 18px;
+  }
+  .DesktopItem__description {
+    -webkit-line-clamp: 4;
+  }
+}
+

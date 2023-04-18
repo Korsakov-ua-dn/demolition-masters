@@ -19,11 +19,11 @@ export const MobileItem: React.FC<IProps> = ({ project }) => {
             <img src={imgPath} alt="Bar" />
           </picture>
         </div>
-        <div className="MobileItem__text">
+        <a href="#" className="MobileItem__text">
           <span className="MobileItem__title">{project.title}</span>
           <span className="MobileItem__description">{project.description}</span>
           <span className="MobileItem__date">{project.date}</span>
-        </div>
+        </a>
       </div>
     </div>
   );
