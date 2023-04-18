@@ -14,15 +14,15 @@
 
  1. Главный экран в разрешении 1440px
 
-![Главный экран](/../screenshot/screenshots/main.png?raw=true 'Главный экран в разрешении 1440px')
+![Главный экран](/../screenshot/screenshots/main-page.png?raw=true 'Главный экран в разрешении 1440px')
 
  2. Открытая форма обратной связи
 
-![Форма обратной связи](/../screenshot/screenshots/feedback.png?raw=true 'Открытая форма обратной связи')
+![Форма обратной связи](/../screenshot/screenshots/feedback-popup.png?raw=true 'Открытая форма обратной связи')
 
  3. Открытое меню навигации по странице
 
-![Меню навигации](/../screenshot/screenshots/menu.png?raw=true 'Открытое меню навигации по странице')
+![Меню навигации](/../screenshot/screenshots/navigation.png?raw=true 'Открытое меню навигации по странице')
 
  4. Мобильная версия секции "Наши проекты" реализована в виде слайдера
 
