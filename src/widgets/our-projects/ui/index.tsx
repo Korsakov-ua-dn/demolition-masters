@@ -1,6 +1,6 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 
+import { Section } from 'shared/ui/section';
 import { Layout } from 'shared/ui/layout';
 import { SectionTitle } from 'shared/ui/section-title';
 
@@ -11,17 +11,15 @@ import { Mobile } from './mobile';
 
 import './style.scss';
 
-export const OurProjects: React.FC = (props) => {
+export const OurProjects: React.FC = () => {
   return (
-    <section className="OurProjects">
-      <Element name="ourProjects"></Element>
-
+    <Section className="OurProjects">
       <Layout>
         <SectionTitle>Наши проекты</SectionTitle>
         <Desktop ourProjects={ourProjects} />
       </Layout>
 
       <Mobile ourProjects={ourProjects} />
-    </section>
+    </Section>
   );
 };

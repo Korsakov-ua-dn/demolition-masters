@@ -14,7 +14,7 @@ export const Menu: React.FC<IProps> = ({ isTop }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const cb = {
-    handleDrawerOpen: useCallback(() => {
+    openHandler: useCallback(() => {
       setIsOpen(true);
     }, []),
 
@@ -30,7 +30,7 @@ export const Menu: React.FC<IProps> = ({ isTop }) => {
       <IconButton
         color="inherit"
         aria-label="open menu"
-        onClick={cb.handleDrawerOpen}
+        onClick={cb.openHandler}
         edge="end"
         className={className}
       >
