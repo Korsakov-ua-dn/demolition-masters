@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# SPA - Лэндинг для компании по демонтажу зданий и сооружений.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Структура сайта:
 
-## Available Scripts
+- Header:
+    Логотип - по клику скроллит страницу в начало;
+    Меню - открывает навигацию по странице;
+- Главный баннер с кратким описанием компании и кнопкой открытия модального окна с формой обратной связи
+- Секция "Наши проекты". На мобильных устройствах реализована ввиде слайдера.
+- Секция "Рассчитать стоимость работ". Калькулятор для расчета и кнопка открытия модального окна с формой обратной связи
+- Footer
 
-In the project directory, you can run:
+### Скриншоты секций и интерактивных элементов сайта:
 
-### `npm start`
+![Главный экран](/../screenshot/screenshots/main.png?raw=true 'Главный экран в разрешении 1440px')
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Форма обратной связи](/../screenshot/screenshots/feedback.png?raw=true 'Открытая форма обратной связи')
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Меню навигации](/../screenshot/screenshots/menu.png?raw=true 'Открытое меню навигации по странице')
 
-### `npm test`
+![Слайдер проектов](/../screenshot/screenshots/slider.png?raw=true 'Мобильная версия секции "Наши проекты" реализована в виде слайдера')
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Калькулятор](/../screenshot/screenshots/calculator.png?raw=true 'Мобильная версия секции "Рассчитать стоимость работ"')
 
-### `npm run build`
+### Ссылка на приложение развернутое на хостинге vercel:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://react-typescript-table-component.vercel.app/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Технологический стек:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Feature Sliced Design, React, TypeScript, Redux Toolkit, Material UI, SCSS.
 
-### `npm run eject`
+## Требования
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Node.js >= 16
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Установка
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm install`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Запуск для разработки
 
-## Learn More
+В режиме разработки (development) приложение запускается командой:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Сборка для продакшена
+
+Для публикации проекта на сервере сначала выполняется сборка приложения командой:
+
+`npm run build`
